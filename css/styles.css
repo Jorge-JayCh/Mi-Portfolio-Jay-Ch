@@ -25,6 +25,11 @@ body {
   background-color: var(--secondary);
 }
 
+.contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 /* SECCION INICIO */
 #inicio {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(70, 130, 180, 0.2)),
@@ -241,7 +246,6 @@ body {
   padding: 100px 15px;
   text-align: center;
   background-color: var(--secondary-light0);
-  /* height: 100vh; */
 }
 
 #servicios .titulo-servicios {
@@ -311,22 +315,22 @@ body {
 /* SECCION TECNOLOGIAS */
 #tecnologias {
   background-color: var(--secondary-light0);
-  /* background-color: darkblue; */
   padding: 100px 0px;
-  /* height: 100vh; */
-  /* display: flex;
-  align-items: center; */
 }
-#tecnologias .contenedor-habilidades img {
+
+#tecnologias .habilidades img {
   width:90px;
 }
 
-#tecnologias .contenedor-habilidades h2 {
+#tecnologias .habilidades h2 {
   padding: 30px 30px 90px 30px;
   font-size: 2.2rem;
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-light1);
+  text-decoration-thickness: 5px;
 }
 
-#tecnologias .contenedor-habilidades {
+#tecnologias .habilidades {
   display: grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,auto));
   gap:170px;
@@ -364,4 +368,44 @@ body {
 #tecnologias .herramientas>div:hover h3 {
   opacity: 1;
   transform: translate(0px,-150px);
+}
+
+/* SECCION PROYECTOS */
+#proyectos {
+  background-color: var(--secondary-light0);
+  padding: 100px 0px;
+}
+
+#proyectos .proyectos {
+  padding-bottom: 110px;
+  /* Contenedor de la grilla proyectos */
+}
+
+#proyectos .proyectos h2 {
+  padding: 40px;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--dark2);
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-light1);
+  text-decoration-thickness: 5px;
+}
+
+#proyectos .grilla-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(290px,auto));
+  gap: 15px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#proyectos .grilla-proyectos img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform .2s ease;
+}
+
+#proyectos .grilla-proyectos img:hover {
+  transform: scale(1.1);
 }
