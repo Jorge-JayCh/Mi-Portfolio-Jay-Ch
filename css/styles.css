@@ -409,3 +409,31 @@ body {
 #proyectos .grilla-proyectos img:hover {
   transform: scale(1.1);
 }
+
+/* FOOTER */
+#footer {
+  background-color: var(--dark2);
+  text-align: center;
+  color: var(--secondary-light0);
+}
+
+#footer .iconos-footer {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+#footer .contenedor-icono {
+  padding: 0px 20px;
+}
+
+#footer .contenedor-icono a {
+  color: var(--secondary-light0);
+  text-decoration: none;
+  transition: .5s;
+}
+
+#footer .contenedor-icono a:hover {
+  color: var(--primary);
+  font-size: 16.25px;
+}
