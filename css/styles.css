@@ -410,6 +410,71 @@ body {
   transform: scale(1.1);
 }
 
+/* SECCION CONTACTO */
+
+#contacto {
+  padding: 100px 15px;
+}
+
+#contacto .titulo-seccion {
+  margin-bottom: 20px;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: var(--dark2);
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-light1);
+  text-decoration-thickness: 5px;
+  text-align: center;
+}
+
+#contacto .contenedor-form {
+  max-width: 1100px;
+  margin: auto;
+}
+
+#contacto .contenedor-form .fila {
+  margin-bottom: 15px;
+}
+
+#contacto .contenedor-form .mitad {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea {
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid var(--secondary-light2);
+}
+
+#contacto .contenedor-form .mitad input {
+  width: 48%;
+}
+
+#contacto .contenedor-form .input-full {
+  width: 100%;
+}
+
+#contacto .btn-enviar {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark2);
+  border: 2px solid var(--secondary-light2);
+  margin-top: 30px;
+  transition: .5s;
+}
+
+#contacto .btn-enviar:hover {
+  background-color: var(--primary);
+  color: var(--secondary-light0);
+}
+
 /* FOOTER */
 #footer {
   background-color: var(--dark2);
